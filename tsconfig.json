@@ -1,0 +1,26 @@
+{
+	"compilerOptions" : {
+		"declaration"                  : true,
+		"module"                       : "commonjs",
+		"outDir"                       : "./lib",
+		"target"                       : "es2018",
+		"sourceMap"                    : true,
+		"strict"                       : true,
+		"strictPropertyInitialization" : false,
+		"esModuleInterop"              : true
+	},
+	"include"         : [
+		"src",
+		"src/scripts",
+		"**/*.ts",
+		"src/**/*.ts",
+		"src/*.ts",
+		"tests/**/*.ts"
+	],
+	"exclude"         : [
+		"node_modules",
+		"**/__tests__/*",
+		"tests",
+		"jest.config.ts"
+	]
+}
