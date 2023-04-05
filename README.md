@@ -97,11 +97,11 @@ export class ExampleApi extends Api {
 
 example.controller.ts
 ```ts
-import { AppController } from "@sofiakb/nuxt3-http";
+import { HttpController } from "@sofiakb/nuxt3-http";
 import Example from './example';
 import ExampleService from './example.service';
 
-export default class ExampleController extends AppController<Example> {
+export default class ExampleController extends HttpController<Example> {
 	service: ExampleService;
 
 	constructor() {
@@ -124,11 +124,11 @@ export default class ExampleController extends AppController<Example> {
 
 example.service.ts
 ```ts
-import { AppService } from "@sofiakb/nuxt3-http";
+import { HttpService } from "@sofiakb/nuxt3-http";
 import Example from './example';
 import { ExampleApi } from './example.api';
 
-export default class ExampleService extends AppService<Example> {
+export default class ExampleService extends HttpService<Example> {
 	constructor() {
 		super({ api: ExampleApi, model: Example });
 	}

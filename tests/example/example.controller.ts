@@ -7,11 +7,11 @@
  * File src/modules/example/example.controller
  */
 
-import { AppController } from '../../src';
+import { HttpController } from '../../src';
 import Example from './example';
 import ExampleService from './example.service';
 
-export default class ExampleController extends AppController<Example> {
+export default class ExampleController extends HttpController<Example> {
 	service: ExampleService;
 
 	constructor() {

@@ -9,11 +9,11 @@
  * File tests/example/example.service
  */
 
-import { AppService } from '../../src';
+import { HttpService } from '../../src';
 import Example from './example';
 import { ExampleApi } from './example.api';
 
-export default class ExampleService extends AppService<Example> {
+export default class ExampleService extends HttpService<Example> {
 	constructor() {
 		super({ api: ExampleApi, model: Example });
 	}
