@@ -9,18 +9,18 @@
  * File src/core/app.controller
  */
 
-import AppService from './app.service';
+import HttpService from './http.service';
 import { GenericModelAttributes } from '../types/controller';
 
 interface AppControllerProperties<T extends GenericModelAttributes> {
-	service: AppService<T>;
+	service: HttpService<T>;
 }
 
 /**
- * @class AppController
+ * @class HttpController
  */
-export default class AppController<T extends GenericModelAttributes> {
-	service: AppService<T>;
+export default class HttpController<T extends GenericModelAttributes> {
+	service: HttpService<T>;
 
 	/**
 	 * @constructor AppController

@@ -13,9 +13,9 @@ import { HttpApi } from './http-api';
 import { ControllerAttributes, GenericModelAttributes } from '../types/controller';
 
 /**
- * @class AppService
+ * @class HttpService
  */
-export default class AppService<T extends GenericModelAttributes> {
+export default class HttpService<T extends GenericModelAttributes> {
 	httpApi: HttpApi<T>;
 
 	/**
