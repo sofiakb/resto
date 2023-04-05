@@ -30,6 +30,7 @@ export { UploadService, DownloadService };
 export { HttpOptions, HttpApiError, ApiAttributes } from './types/api';
 export { GenericModelAttributes, ControllerAttributes } from './types/controller';
 export { ElementType } from './types/element-type';
+export { MethodsType } from './types/methods-type';
 
 export * from './utils';
 export { default as XNumber } from './utils/x-number';
