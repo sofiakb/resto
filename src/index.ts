@@ -28,7 +28,7 @@ export { AppControllerProperties } from './core/http.controller';
 export { UploadService, DownloadService };
 
 export { HttpOptions, HttpApiError, ApiAttributes } from './types/api';
-export { GenericModelAttributes } from './types/controller';
+export { GenericModelAttributes, ControllerAttributes } from './types/controller';
 export { ElementType } from './types/element-type';
 
 export * from './utils';
