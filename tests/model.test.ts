@@ -1,9 +1,9 @@
 'use strict';
 
 /*
- * vue3-framework
+ * nuxt3-http
  *
- * (c) Sofiane Akbly <sofiane.akbly@digi-service.fr>
+ * (c) Sofiane Akbly <contact.sofiakb@gmail.com>
  *
  * Created by WebStorm on 07/09/2022 at 09:42
  * File tests/model.test

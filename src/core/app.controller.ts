@@ -3,7 +3,7 @@
 /*
  * nuxt3-http
  *
- * (c) Sofiane Akbly <sofiane.akbly@digi-service.fr>
+ * (c) Sofiane Akbly <contact.sofiakb@gmail.com>
  *
  * Created by WebStorm on 05/04/2023 at 11:12
  * File src/core/app.controller

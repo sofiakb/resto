@@ -1,7 +1,7 @@
 'use strict';
 
 /*
- * exudatain-manager-app
+ * nuxt3-http
  *
  * (c) Sofiakb <contact.sofiakb@gmail.com>
  *

@@ -1,4 +1,6 @@
 /*
+ * nuxt3-http
+ *
  * (c) Sofiane Akbly <contact.sofiakb@gmail.com>
  *
  * Created by WebStorm on 28/09/2021 at 10:11

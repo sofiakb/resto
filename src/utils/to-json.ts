@@ -1,9 +1,9 @@
 'use strict';
 
 /*
- * cloud-functions
+ * nuxt3-http
  *
- * (c) Sofiane Akbly <sofiane.akbly@digi-service.fr>
+ * (c) Sofiane Akbly <contact.sofiakb@gmail.com>
  *
  * Created by WebStorm on 04/01/2023 at 11:43
  * File functions/src/utils/to-json

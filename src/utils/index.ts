@@ -6,7 +6,7 @@ import { HttpOptions } from '../types/api';
 /*
  * nuxt3-http
  *
- * (c) Sofiane Akbly <sofiane.akbly@digi-service.fr>
+ * (c) Sofiane Akbly <contact.sofiakb@gmail.com>
  *
  * Created by WebStorm on 04/04/2023 at 16:41
  * File src/utils/index

@@ -1,7 +1,7 @@
 'use strict';
 
 /*
- * nuxt3-project-default
+ * nuxt3-http
  *
  * (c) Sofiakb <contact.sofiakb@gmail.com>
  *
