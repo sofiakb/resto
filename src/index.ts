@@ -16,7 +16,7 @@ export { default as Api } from './api';
 export { HttpApi } from './core/http-api';
 export { default as Model } from './core/model';
 export { default as ModelAttribute } from './core/model-attribute';
-export { default as HttpController } from './core/http.controller';
+export { default as HttpController, AppControllerProperties } from './core/http.controller';
 export { default as HttpService } from './core/http.service';
 
 export { default as UploadService } from './services/upload.api';

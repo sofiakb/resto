@@ -12,7 +12,7 @@
 import HttpService from './http.service';
 import { GenericModelAttributes } from '../types/controller';
 
-interface AppControllerProperties<T extends GenericModelAttributes> {
+export interface AppControllerProperties<T extends GenericModelAttributes> {
 	service: HttpService<T>;
 }
 
