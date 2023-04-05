@@ -17,18 +17,13 @@ import { HttpConfig } from './types/http-config';
 import { toJSON } from './utils/to-json';
 import { __options, urlCleanup } from './utils';
 import Nullable from './types/nullable';
-import { __createError, ApiAttributes, HttpOptions, HttpResponse } from './types/api';
+import { __createError, ApiAttributes, HttpOptions } from './types/api';
 
 export default class Api {
 	/**
 	 * @type {?string}
 	 */
 	server: string | null = null;
-
-	/**
-	 * @type {?string}
-	 */
-	tokenName: string | null = null;
 
 	/**
 	 * @type {?string[]}
@@ -82,7 +77,7 @@ export default class Api {
 	}
 
 	request(method: MethodsType, url: string, options: HttpOptions | null = {}) {
-		this.withServer().withTokenName();
+		this.withServer();
 
 		return new Promise((resolve, reject) => {
 			if (!!options?.loading)
@@ -113,11 +108,6 @@ export default class Api {
 
 	withServer(server?: Nullable<string>) {
 		this.server = this.server ?? server ?? process.env.API_SERVER ?? null;
-		return this;
-	}
-
-	withTokenName(tokenName?: Nullable<string>) {
-		this.tokenName = this.server ?? tokenName ?? process.env.TOKEN_NAME ?? null;
 		return this;
 	}
 

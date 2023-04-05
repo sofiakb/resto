@@ -44,14 +44,9 @@ export type ApiAttributes = {
 	server: string | null;
 
 	/**
-	 * @type {?string}
-	 */
-	tokenName: string | null;
-
-	/**
 	 * @type {?string[]}
 	 */
-	methods: string[];
+	methods?: string[];
 
 	/**
 	 * @type {?string}

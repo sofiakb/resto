@@ -22,7 +22,8 @@ export { default as HttpService } from './core/http.service';
 export { default as UploadService } from './services/upload.api';
 export { default as DownloadService } from './services/download.api';
 
-export { HttpOptions, HttpApiError } from './types/api';
+export { HttpOptions, HttpApiError, ApiAttributes } from './types/api';
+export { GenericModelAttributes } from './types/controller';
 export { ElementType } from './types/element-type';
 export { default as Nullable } from './types/nullable';
 
