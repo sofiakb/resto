@@ -30,7 +30,7 @@ export default class UploadApi extends Api {
 		);
 	}
 
-	post(url: string, data: Record<string, unknown>, options: HttpOptions = {}): Promise<unknown> {
+	send(url: string, data: FormData, options: HttpOptions = {}): Promise<unknown> {
 		return this.upload(url, { ...options, ...{ data } });
 	}
 }
