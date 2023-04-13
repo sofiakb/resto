@@ -10,7 +10,7 @@
  */
 
 import { each } from 'lodash';
-import UploadApi from "../services/upload.api";
+import UploadApi from '../services/upload.api';
 
 class Upload {
 	data;
