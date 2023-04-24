@@ -15,12 +15,12 @@ import Api from '../api';
 import { HttpOptions } from '../types/api';
 
 export default class UploadApi extends Api {
-	upload(path: string, options: any = {}): Promise<unknown> {
+	upload(path: string,data: FormData, options: any = {}): Promise<unknown> {
 		options.headers = options.headers ?? <Headers>{};
 		options.headers.set('Content-Type', 'multipart/form-data');
 		return new Promise((resolve, reject) =>
 			axios
-				.post(`${this.server}/${path}`, options.data, {
+				.post(`${this.server}/${path}`, data, {
 					headers: toJSON(options.headers),
 				})
 				.then((response: AxiosResponse) =>
@@ -31,6 +31,6 @@ export default class UploadApi extends Api {
 	}
 
 	send(url: string, data: FormData, options: HttpOptions = {}): Promise<unknown> {
-		return this.upload(url, { ...options, ...{ data } });
+		return this.upload(url, data, options);
 	}
 }

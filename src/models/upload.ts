@@ -13,7 +13,7 @@ import { each } from 'lodash';
 import UploadApi from '../services/upload.api';
 
 class Upload {
-	data;
+	data: FormData;
 	object;
 	config;
 
