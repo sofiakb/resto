@@ -42,7 +42,7 @@ export class HttpApi<T extends GenericModelAttributes> {
 	): Promise<T[] | T | Record<string, unknown> | HttpApiError> {
 		return new Promise((resolve, reject) => {
 			if (!this.modelObject.isMethodAllowed(method))
-				return reject(<HttpApiError>{ message: `Method [${method}] not allowed`, status: 400 });
+				return reject(<HttpApiError>{ message: `Method [${method}] not allowed`, status: 400, code: 400 });
 
 			return callback()
 				.then((response) => resolve(response))

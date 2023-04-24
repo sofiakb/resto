@@ -12,6 +12,7 @@
 export interface HttpApiError {
 	message: string;
 	status: number;
+	code: number | string;
 }
 
 export interface HttpResponse {
@@ -24,6 +25,7 @@ export const __createError = (error: HttpResponse | null): HttpApiError =>
 	<HttpApiError>{
 		message: error?.data?.error ?? 'Une erreur est survenue, merci de réessayer plus tard.',
 		status: parseInt((error?.status ?? 500).toString()),
+		code: error?.data?.code ?? error?.status ?? 500,
 	};
 
 export interface HttpOptions {

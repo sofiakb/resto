@@ -83,7 +83,7 @@ export default class Model {
 	}
 
 	notAllowedMethodError(methodName: string) {
-		return <HttpApiError>{ message: `Method [${methodName}] not allowed`, status: 400 };
+		return <HttpApiError>{ message: `Method [${methodName}] not allowed`, status: 400, code: 400 };
 	}
 
 	_only() {
