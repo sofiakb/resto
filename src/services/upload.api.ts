@@ -15,7 +15,7 @@ import Api from '../api';
 import { HttpOptions } from '../types/api';
 
 export default class UploadApi extends Api {
-	upload(path: string,data: FormData, options: any = {}): Promise<unknown> {
+	upload(path: string, data: FormData, options: any = {}): Promise<unknown> {
 		options.headers = options.headers ?? <Headers>{};
 		options.headers.set('Content-Type', 'multipart/form-data');
 		return new Promise((resolve, reject) =>
