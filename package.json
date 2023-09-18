@@ -13,7 +13,7 @@
     "prepublishOnly": "pnpm run lint",
     "release": "./scripts/release.sh",
     "preversion": "pnpm run lint",
-    "version": "pnpm run test && pnpm run build && pnpm run format && git add -A src && pnpm publish --access public",
+    "version": "pnpm run test && pnpm run build && pnpm run format",
     "postversion": "git push -u origin HEAD --tags && ./scripts/release.sh $(cat package.json | jq -r '.version')"
   },
   "repository": {
