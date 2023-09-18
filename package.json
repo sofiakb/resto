@@ -1,6 +1,6 @@
 {
   "name": "@sofiakb/resto",
-  "version": "1.0.0-dev.11",
+  "version": "1.0.0",
   "description": "A typescript library for axios API calls.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,16 +9,16 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "rm -rf lib && eslint 'src/**/*.{ts,tsx}' --quiet --fix",
-    "prepare": "npm run lint && npm run format && npm run build",
-    "prepublishOnly": "npm run lint",
+    "prepare": "pnpm run lint && pnpm run format && pnpm run build",
+    "prepublishOnly": "pnpm run lint",
     "release": "./scripts/release.sh",
-    "preversion": "npm run lint",
-    "version": "npm run test && npm run build && npm run format && git add -A src && npm publish --access public",
-    "postversion": "git push origin main && git push origin main --tags"
+    "preversion": "pnpm run lint",
+    "version": "pnpm run test && pnpm run build && pnpm run format && git add -A package.json src && git commit -m \"Bump version to $(cat package.json | jq -r '.version')\" && pnpm publish --access public",
+    "postversion": "git push -u origin HEAD --tags && ./scripts/release.sh $(cat package.json | jq -r '.version')"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sofiakb/axios-api.git"
+    "url": "git+ssh://git@github.com/sofiakb/resto.git"
   },
   "author": {
     "name": "Sofiakb",
@@ -27,9 +27,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sofiakb/axios-api/issues"
+    "url": "https://github.com/sofiakb/resto/issues"
   },
-  "homepage": "https://github.com/sofiakb/axios-api#readme",
+  "homepage": "https://github.com/sofiakb/resto#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
