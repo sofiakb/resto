@@ -1,5 +1,5 @@
 /*
- * nuxt3-http
+ * resto
  *
  * (c) Sofiane Akbly <contact.sofiakb@gmail.com>
  *

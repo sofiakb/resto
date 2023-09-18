@@ -1,5 +1,5 @@
 {
-  "name": "@sofiakb/nuxt3-http",
+  "name": "@sofiakb/resto",
   "version": "1.0.0-dev.11",
   "description": "A typescript library for axios API calls.",
   "main": "lib/index.js",
@@ -11,6 +11,7 @@
     "lint": "rm -rf lib && eslint 'src/**/*.{ts,tsx}' --quiet --fix",
     "prepare": "npm run lint && npm run format && npm run build",
     "prepublishOnly": "npm run lint",
+    "release": "./scripts/release.sh",
     "preversion": "npm run lint",
     "version": "npm run test && npm run build && npm run format && git add -A src && npm publish --access public",
     "postversion": "git push origin main && git push origin main --tags"
