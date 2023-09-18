@@ -29,12 +29,13 @@ jobs:
           node-version: 18
       - run: npm i -g pnpm
         name: Install global pnpm
-      - run: pn i
+      - run: pnpm i
         name: pnpm install
-      - run: pn run test
+      - run: pnpm run test
         name: Run tests
 
   generate:
+    needs: test
     name: Generate tags
     runs-on: ubuntu-latest
     steps:
