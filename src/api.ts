@@ -158,7 +158,7 @@ export default class Api {
 	async __response(response: Response) {
 		try {
 			const res = await response.json();
-			return res.data?.data ?? res?.data ?? response;
+			return res.data?.data ?? res?.data ?? res;
 		} catch (e) {
 			return null;
 		}
