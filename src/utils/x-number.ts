@@ -1,7 +1,7 @@
 'use strict';
 
 /*
- * nuxt3-http
+ * resto
  *
  * (c) Sofiakb <contact.sofiakb@gmail.com>
  *

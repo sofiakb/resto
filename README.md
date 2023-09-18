@@ -12,17 +12,17 @@
 <br />
 <p align="center">
 
-  <h1 align="center">nuxt3-http</h1>
+  <h1 align="center">resto</h1>
 
   <p align="center">
       A typescript library for http API calls.
       <br />
-      <!--<a href="https://github.com/sofiakb/nuxt3-http"><strong>Explore the docs »</strong></a>-->
+      <!--<a href="https://github.com/sofiakb/resto"><strong>Explore the docs »</strong></a>-->
       <br />
       <br />
-      <a href="https://github.com/sofiakb/nuxt3-http/issues">Report Bug</a>
+      <a href="https://github.com/sofiakb/resto/issues">Report Bug</a>
       ·
-      <a href="https://github.com/sofiakb/nuxt3-http/issues">Request Feature</a>
+      <a href="https://github.com/sofiakb/resto/issues">Request Feature</a>
   </p>
 
 </p>
@@ -79,7 +79,7 @@ The library simplify API calls with axios library.
 ### Installation
 
 ```shell
-npm install --save @sofiakb/nuxt3-http
+npm install --save @sofiakb/resto
 ```
 
 <!-- USAGE EXAMPLES -->
@@ -88,7 +88,7 @@ npm install --save @sofiakb/nuxt3-http
 
 example.api.ts
 ```ts
-import { Api } from "@sofiakb/nuxt3-http";
+import { Api } from "@sofiakb/resto";
 
 export class ExampleApi extends Api {
 	server = 'https://httpbin.org/status';
@@ -97,7 +97,7 @@ export class ExampleApi extends Api {
 
 example.controller.ts
 ```ts
-import { HttpController } from "@sofiakb/nuxt3-http";
+import { HttpController } from "@sofiakb/resto";
 import Example from './example';
 import ExampleService from './example.service';
 
@@ -124,7 +124,7 @@ export default class ExampleController extends HttpController<Example> {
 
 example.service.ts
 ```ts
-import { HttpService } from "@sofiakb/nuxt3-http";
+import { HttpService } from "@sofiakb/resto";
 import Example from './example';
 import { ExampleApi } from './example.api';
 
@@ -149,7 +149,7 @@ export default class ExampleService extends HttpService<Example> {
 
 example.ts
 ```ts
-import { Model, ModelAttribute } from "@sofiakb/nuxt3-http";
+import { Model, ModelAttribute } from "@sofiakb/resto";
 
 export default class Example extends Model {
 	id: string;
@@ -181,7 +181,7 @@ export default class Example extends Model {
 
 ## Roadmap
 
-See the [open issues](https://github.com/sofiakb/nuxt3-http/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/sofiakb/resto/issues) for a list of proposed features (and known issues).
 
 
 <!-- LICENSE -->
@@ -196,25 +196,25 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/sofiakb/nuxt3-http.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/sofiakb/resto.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/sofiakb/nuxt3-http/graphs/contributors
+[contributors-url]: https://github.com/sofiakb/resto/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/sofiakb/nuxt3-http.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/sofiakb/resto.svg?style=for-the-badge
 
-[forks-url]: https://github.com/sofiakb/nuxt3-http/network/members
+[forks-url]: https://github.com/sofiakb/resto/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/sofiakb/nuxt3-http.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/sofiakb/resto.svg?style=for-the-badge
 
-[stars-url]: https://github.com/sofiakb/nuxt3-http/stargazers
+[stars-url]: https://github.com/sofiakb/resto/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/sofiakb/nuxt3-http.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/sofiakb/resto.svg?style=for-the-badge
 
-[issues-url]: https://github.com/sofiakb/nuxt3-http/issues
+[issues-url]: https://github.com/sofiakb/resto/issues
 
-[license-shield]: https://img.shields.io/github/license/sofiakb/nuxt3-http.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/sofiakb/resto.svg?style=for-the-badge
 
-[license-url]: https://github.com/sofiakb/nuxt3-http/blob/main/LICENSE
+[license-url]: https://github.com/sofiakb/resto/blob/main/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
