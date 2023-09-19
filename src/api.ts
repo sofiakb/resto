@@ -35,7 +35,7 @@ export default class Api {
 	 */
 	PREFIX = '';
 
-	constructor(attributes: ApiAttributes) {
+	constructor(attributes?: ApiAttributes) {
 		forEach(attributes, (value: any, attribute: string) => {
 			if (this.hasOwnProperty(attribute) || attribute in this) {
 				// @ts-ignore

@@ -13,7 +13,7 @@ import Api from '../../api';
 import ModelAttribute from '../../core/model-attribute';
 
 export interface ControllerAttributes {
-	api: ClassConstructor<Api>;
+	api?: ClassConstructor<Api>;
 	model: ClassConstructor<any>;
 }
 

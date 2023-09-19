@@ -26,7 +26,7 @@ export class HttpApi<T extends GenericModelAttributes> {
 	table: string;
 
 	constructor(attributes: ControllerAttributes) {
-		this.api = new attributes.api();
+		this.api = !!attributes.api ? new attributes.api() : new Api();
 		this.model = attributes.model;
 		this.modelObject = new this.model();
 		this.table = this.modelObject.table;
