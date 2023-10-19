@@ -71,7 +71,7 @@ export default class DateJs {
 			: `${(week = this.moment().diff(this.moment(birthday), 'week'))} semaine${Math.abs(week) > 1 ? 's' : ''}`;
 	}
 
-	static between(start: string | any, end: string | any, unit = true) {
+	static between(start: string | any, end: string | any) {
 		const year = this.moment(end).diff(this.moment(start), 'years');
 		let month, week;
 		return year > 0
