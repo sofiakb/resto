@@ -11,6 +11,7 @@
 
 import moment from 'moment-timezone';
 import XNumber from './x-number';
+import { DateTime } from 'luxon';
 
 export class DateFrom {
 	when: string;
@@ -46,6 +47,12 @@ export default class DateJs {
 			: format
 			? moment(date, format).tz('Europe/Paris')
 			: moment(date).tz('Europe/Paris');
+	}
+
+	static dateTime(date: string | null = null, format = 'YYYY/MM/DD') {
+		return date === null
+			? DateTime.now().setZone('Europe/Paris')
+			: DateTime.fromFormat(date, format).setZone('Europe/Paris');
 	}
 
 	static momentSql(date: string | null = null, format = 'YYYY-MM-DD HH:mm:ss') {

@@ -222,9 +222,13 @@ export class HttpApi<T extends GenericModelAttributes> {
 			data = clone(data);
 
 			each(keys(data), (key) => {
-				if (defined(data?.casts) && defined(data?.casts[key]) && data?.casts[key] === 'date') {
+				if (
+					defined(data?.casts) &&
+					defined(data?.casts[key]) &&
+					(data?.casts[key] === 'date' || data?.casts[key] === 'datetime')
+				) {
 					// @ts-ignore
-					data[key] = date.moment(data[key]);
+					data[key] = data.casts[key] === 'datetime' ? date.dateTime(data[key]) : date.moment(data[key]);
 				}
 
 				if (typeof original[key] === 'undefined') {

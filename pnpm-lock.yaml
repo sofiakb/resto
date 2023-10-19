@@ -8,6 +8,9 @@ dependencies:
   axios:
     specifier: ^0.27.2
     version: 0.27.2
+  luxon:
+    specifier: ^3.4.3
+    version: 3.4.3
   moment:
     specifier: ^2.29.4
     version: 2.29.4
@@ -34,6 +37,9 @@ devDependencies:
   '@types/lodash':
     specifier: ^4.14.191
     version: 4.14.198
+  '@types/luxon':
+    specifier: ^3.3.3
+    version: 3.3.3
   '@types/node':
     specifier: ^18.13.0
     version: 18.17.17
@@ -1781,6 +1787,10 @@ packages:
 
   /@types/lodash@4.14.198:
     resolution: {integrity: sha512-trNJ/vtMZYMLhfN45uLq4ShQSw0/S7xCTLLVM+WM1rmFpba/VS42jVUgaO3w/NOLiWR/09lnYk0yMaA/atdIsg==}
+    dev: true
+
+  /@types/luxon@3.3.3:
+    resolution: {integrity: sha512-/BJF3NT0pRMuxrenr42emRUF67sXwcZCd+S1ksG/Fcf9O7C3kKCY4uJSbKBE4KDUIYr3WMsvfmWD8hRjXExBJQ==}
     dev: true
 
   /@types/node@18.17.17:
@@ -3533,6 +3543,11 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /luxon@3.4.3:
+    resolution: {integrity: sha512-tFWBiv3h7z+T/tDaoxA8rqTxy1CHV6gHS//QdaH4pulbq/JuBSGgQspQQqcgnwdAx6pNI7cmvz5Sv/addzHmUg==}
+    engines: {node: '>=12'}
+    dev: false
 
   /make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
