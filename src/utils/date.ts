@@ -11,6 +11,7 @@
 
 import moment from 'moment-timezone';
 import XNumber from './x-number';
+import { DateTime } from 'luxon';
 
 export class DateFrom {
 	when: string;
@@ -48,6 +49,12 @@ export default class DateJs {
 			: moment(date).tz('Europe/Paris');
 	}
 
+	static dateTime(date: string | null = null, format = 'YYYY/MM/DD') {
+		return date === null
+			? DateTime.now().setZone('Europe/Paris')
+			: DateTime.fromFormat(date, format).setZone('Europe/Paris');
+	}
+
 	static momentSql(date: string | null = null, format = 'YYYY-MM-DD HH:mm:ss') {
 		return this.moment(date, format);
 	}
@@ -64,7 +71,7 @@ export default class DateJs {
 			: `${(week = this.moment().diff(this.moment(birthday), 'week'))} semaine${Math.abs(week) > 1 ? 's' : ''}`;
 	}
 
-	static between(start: string | any, end: string | any, unit = true) {
+	static between(start: string | any, end: string | any) {
 		const year = this.moment(end).diff(this.moment(start), 'years');
 		let month, week;
 		return year > 0
