@@ -34,7 +34,6 @@
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-typescript": "^7.23.2",
-    "@babel/traverse": "^7.23.2",
     "@types/jest": "^29.5.6",
     "@types/lodash": "^4.14.200",
     "@types/luxon": "^3.3.3",
@@ -61,5 +60,10 @@
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "pluralize": "^8.0.0"
-  }
+  },
+	"pnpm": {
+		"overrides": {
+			"@babel/traverse": ">=7.23.2"
+		}
+	}
 }
